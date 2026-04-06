@@ -16,7 +16,7 @@ class OpenAIAgent:
 				}]
         
         now = datetime.now()
-        current_time_str = now.strftime("%m-%d %H:%M:%S")
+        current_time_str = now.strftime("%m-%d %H-%M-%S")
 
         name = f"{args.query}_{args.index}_{args.mode}_{args.eval}_{args.num_trial}_{current_time_str}"
         conv_dir = './conv_history/{}/'.format(model)
@@ -73,7 +73,7 @@ class ReflectOpenAIAgent(OpenAIAgent):
 
         # self.context, self.question, self.performance = context, question, performance
         now = datetime.now()
-        current_time_str = now.strftime("%m-%d %H:%M:%S")
+        current_time_str = now.strftime("%m-%d %H-%M-%S")
 
         name = f"Reflector_{args.query}_{args.index}_{args.mode}_{args.eval}_{args.num_trial}_{current_time_str}"
         conv_dir = './conv_history/{}/'.format(model)
@@ -124,7 +124,7 @@ class EvalOpenAIAgent(OpenAIAgent):
 
         # self.context, self.question, self.performance = context, question, performance
         now = datetime.now()
-        current_time_str = now.strftime("%m-%d %H:%M:%S")
+        current_time_str = now.strftime("%m-%d %H-%M-%S")
 
         name = f"{args.eval}_{args.query}_{args.index}_{args.mode}_{args.eval}_{args.num_trial}_{current_time_str}"
         conv_dir = './conv_history/{}/'.format(model)
