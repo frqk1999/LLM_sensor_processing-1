@@ -2,13 +2,13 @@ openai==1.33.0
 transformers
 accelerate
 evaluate
-deepspeed
+# deepspeed
 tqdm
 datasets
 together
 func_timeout
 pandas
-scipy==1.12.0
+scipy
 librosa
 peft
 pmdarima
